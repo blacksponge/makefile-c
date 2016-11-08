@@ -77,7 +77,7 @@ run: $(BINDIR)/$(PROG)
 	$(eval endTime=$(shell date +%s%N))
 	@tput setaf 6
 	@echo
-	@echo Terminated in $$(echo $(endTime) $(beginTime) | awk '{printf ($$1-$$2)/1000000000}')s
+	@echo Terminated in $$(echo $(endTime) $(beginTime) | awk '{printf ($$1-$$2)/1000000000}')s with code $$?
 	@tput setaf 7
 
 #Generates doxygen configuration file with INPUT tag set to the source directory and
