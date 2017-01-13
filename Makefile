@@ -8,13 +8,13 @@ PROG=ilikeponies
 BUILDDIR=./build
 #The executable will be genreted there
 BINDIR=./bin
-#All the backups are save in this one
+#All the backups are saved in this one
 SAVEDIR=./backup
 #The directory that contains all your source files
 SRCDIR=./src
 #And finally the directory that will contain the documentation
 DOCDIR=./doc
-#Name of doxygen configutation file
+#Name of doxygen configuration file
 DOXYFILE=Doxyfile
 
 SRC := $(shell ls $(SRCDIR)/*.c)
